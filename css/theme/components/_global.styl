@@ -22,7 +22,6 @@
     --button-hover: button_bg_hover
     --button-contrast: button_font
     --button-contrast-hover: button_font_hover
-
     // Socials
     --youtube: #cc0404
     --facebook: #3b5998
@@ -31,6 +30,8 @@
     --thumblr: #32506d
     --linkedin: #007bb5
     --instagram: #e4405f
+    // custom
+    --border-color: #e5e5e5
 
 /*
  * Base
@@ -84,3 +85,7 @@ body
 .wrapper
     svg
         fill: currentColor
+
+input[type=text], input[type=password], input[type=search], input[type=email], input[type=url], input[type=tel], input[type=number], input[type=date], input[type=mounth], input[type=week], input[type=time], input[type=datetime], input[type=datetime-local], input[type=color]
+    border: solid 1px var(--border-color)
+    box-shadow: none

@@ -1,0 +1,47 @@
+.search
+    .header &
+        margin-left: 0
+
+        @media media-min-lg
+            flex: 0 1 280px
+            margin-right: auto
+
+    &__input
+        @media media-min-sm
+            flex: 1
+            min-width: 0
+            height: 41px !important
+            border-radius: 41px
+
+    &__button
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 0
+
+        @media media-min-sm
+            position: absolute
+            top: 0
+            right: 0
+            width: 50px
+            height: 41px
+            border-radius: 50%
+            background: none
+            box-shadow: none
+            color: var(--primary)
+
+            &:hover
+                background: @background
+                color: @color
+
+        @media media-max-sm
+            width: 44px
+            height: 44px
+            border-radius: 3px
+            background: var(--primary) !important
+
+        .ico
+            @media media-min-sm
+                width: 19px
+                height: 19px
+                fill: currentColor

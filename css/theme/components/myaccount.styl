@@ -1,0 +1,42 @@
+.myaccount
+    .header &
+        @media media-min-lg
+            margin-left: auto
+
+        @media media-max-lg
+            margin-left: 5px
+
+    &__header
+        font-size: 12px
+
+        .ico
+            width: 17px
+            height: 19px
+            fill: currentColor
+
+            @media media-min-lg
+                margin-right: 10px
+
+        span
+            @media media-max-lg
+                display: none
+
+        a
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 3px
+            color: var(--primary)
+
+            @media media-max-lg
+                width: 44px
+                height: 44px
+                background: var(--primary)
+                color: var(--primary-contrast)
+
+                &:hover
+                    background: var(--primary)
+                    color: var(--primary-contrast)
+
+    &__content
+        display: none !important

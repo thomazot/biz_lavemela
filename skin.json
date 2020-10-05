@@ -1,6 +1,6 @@
 {
-    "protocol": "http",
-    "host": "nexybrand.loja.biz",
+    "protocol": "https",
+    "host": "redegalinhamorta.loja.biz",
     "browsers": [">1%"],
     "pxtorem": {
         "rootValue": 16,
