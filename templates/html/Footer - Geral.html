@@ -1,0 +1,41 @@
+<div class="footer__row">
+    <div class="footer__logo">
+        {{widget type="interface/widget_logo" template="interface/widgets/logo.phtml" identificador="footerlogo" imagem="wysiwyg/logo/logo.jpg" imagem_mobile="wysiwyg/logo/logo.jpg" alt_imagem="Lá vem ela" tag_html="div" tag_html_home="h3"}}
+    </div>
+</div>
+
+<div class="footer__row">
+    <div class="footer__box">
+        <h3 class="footer__title">Sobre nós</h3>
+
+        <div class="footer__content">
+            {{block type="menubuilder/output" identifier="footer-sobre-nos"}}
+        </div>
+    </div>
+    <div class="footer__box">
+        <h3 class="footer__title">Ajuda</h3>
+
+        <div class="footer__content">
+            {{block type="menubuilder/output" identifier="footer-ajuda"}}
+        </div>
+    </div>
+    <div class="footer__box">
+        <h3 class="footer__title">Conta</h3>
+
+        <div class="footer__content">
+            {{block type="menubuilder/output" identifier="footer-conta"}}
+        </div>
+
+        <h3 class="footer__title">Rede Sociais</h3>
+        <div class="footer__content">
+            {{widget type="interface/widget_social" template="interface/widgets/social.phtml" identificador="socials" redes="all"}}
+        </div>
+    </div>
+    <div class="footer__box">
+        <h3 class="footer__title">Pagamentos</h3>
+
+        <div class="footer__content">
+            {{widget type="interface/widget_pagtos" template="interface/widgets/pagtos.phtml" identificador="payments" pagtos="all"}}
+        </div>
+    </div>
+</div>
