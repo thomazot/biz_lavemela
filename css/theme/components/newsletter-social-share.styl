@@ -1,0 +1,85 @@
+.newsletter-social-share
+    .newsletter
+        margin: 30px 0
+
+        @media media-min-lg
+            flex: 0 1 645px
+
+        &__form
+            @media media-min-lg
+                position: relative
+                display: flex
+                flex-wrap: nowrap
+                align-items: center
+
+        &__text.std
+            display: flex
+            flex: 0 0 auto
+            justify-content: flex-start
+            align-items: center
+            min-width: 0
+            color: var(--primary)
+            font-weight: medium
+            font-size: 12px
+
+            @media media-min-lg
+                margin-bottom: 0
+
+            .ico
+                margin-right: 10px
+                width: 40px
+                height: 25px
+                fill: currentColor
+
+        &__email
+            @media media-min-lg
+                padding-bottom: 0
+
+            .input-text
+                padding-right: 100px
+                height: 40px
+                border-radius: 40px
+
+        &__submit
+            position: absolute
+            right: 0
+            bottom: 0
+
+            @media media-min-lg
+                padding-bottom: 0
+
+        &__btn
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: 0 16px
+            height: 40px
+            background: none
+            box-shadow: none
+            color: var(--primary)
+            font-weight: bold
+            font-size: 12px
+
+            &:hover
+                background: @background
+                color: @color
+
+    .socials
+        display: flex
+        justify-content: flex-start
+        align-items: center
+
+        @media media-min-lg
+            margin-left: auto
+
+        &__title
+            margin-right: 10px
+            margin-bottom: 0
+            font-weight: bold
+            font-size: 12px
+
+    &__container
+        @media media-min-lg
+            display: flex
+            justify-content: center
+            align-items: center
