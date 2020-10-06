@@ -1347,6 +1347,7 @@ function scrollTop() {
 $j(document)
     .ready(function ($) {
         // document.ready
+        var breadcrumb = $('.breadcrumb')
         // Scrolling
         scrollTop()
 
@@ -1362,6 +1363,14 @@ $j(document)
 
             $(this).closest('.li--0').find('.ul--1').attr('data-title', texto)
         })
+
+        var bannerCategory = $('.category-image')
+
+        if (bannerCategory) {
+            if (breadcrumb) {
+                breadcrumb.after(bannerCategory)
+            }
+        }
     })
     .on('resizeStop', function (e) {
         // Safe window.resize
