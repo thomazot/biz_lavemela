@@ -1,0 +1,28 @@
+.breadcrumb
+    container()
+
+    &__home
+        .breadcrumb__link:before
+            display: none
+
+    &__link
+        font-weight: medium
+        font-size: 14px
+
+    &__last
+        color: var(--secundary)
+        font-weight: medium
+        font-size: 14px
+
+    &__sep
+        display: flex
+        justify-content: center
+        align-items: center
+        color: var(--primary)
+        font-size: 7px
+
+        &:before
+            icon('\f054')
+
+        span
+            display: none
