@@ -11795,11 +11795,46 @@ input[type=color] {
 .cms-home .header-container + .banner {
   margin: 0;
 }
+.cms-home .header-container + .banner img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center center;
+  object-position: center center;
+}
+.cms-home .header-container + .banner .owl-pagination {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: calc(100% - 32px);
+  width: 61.25rem;
+  position: absolute;
+  bottom: 3.75rem;
+  left: 50%;
+  display: flex;
+  justify-content: flex-end;
+  transform: translateX(-50%);
+}
+.cms-home .header-container + .banner .owl-pagination .owl-page span {
+  width: 0.63rem;
+  height: 0.63rem;
+  background: #292830;
+  opacity: 1;
+}
+.cms-home .header-container + .banner .owl-pagination .owl-page.active span {
+  background: #a5a4a2;
+}
 
 .categories__show {
   order: -1;
   margin-right: 0;
   margin-left: 1rem;
+}
+@media (max-width: 568px) {
+  .categories__show {
+    flex: 0 0 40px;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 @media (max-width: 992px) {
   .categories .parent {
@@ -11991,6 +12026,17 @@ input[type=color] {
     margin-bottom: 0 !important;
   }
 }
+@media (min-width: 993px) {
+  .header {
+    margin-bottom: 3.75rem !important;
+  }
+}
+@media (max-width: 568px) {
+  .header {
+    flex: 1;
+    min-width: 0;
+  }
+}
 .header-container {
   position: -webkit-sticky;
   position: sticky;
@@ -12017,6 +12063,10 @@ input[type=color] {
 .header .logo img,
 .header .logo svg {
   height: 2.5rem;
+}
+.logo img {
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 @media (max-width: 992px) {
@@ -12073,6 +12123,12 @@ input[type=color] {
     color: var(--primary-contrast);
   }
 }
+@media (max-width: 568px) {
+  .myaccount__header a {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
 .myaccount__content {
   display: none !important;
 }
@@ -12122,6 +12178,12 @@ input[type=color] {
     border-radius: 3px;
     background: var(--primary);
     color: var(--primary-contrast);
+  }
+}
+@media (max-width: 568px) {
+  .mycart__header a {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
 .mycart__header a:hover {
@@ -12179,8 +12241,8 @@ input[type=color] {
 }
 @media (max-width: 568px) {
   .search__button {
-    width: 2.75rem;
-    height: 2.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 3px;
     background: var(--primary) !important;
   }
