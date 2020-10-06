@@ -817,6 +817,7 @@ function default_carrossel_produtos() {
 
                 $j(el).owlCarousel({
                     navigation: true,
+                    pagination: false,
                     navigationText: ['?', '?'],
                     items: 5,
                     itemsCustom: [

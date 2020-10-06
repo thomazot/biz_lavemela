@@ -1,2 +1,27 @@
 .cms-home .header-container + .banner
     margin: 0
+
+    img
+        width: 100%
+        object-fit: cover
+        object-position: center center
+
+    .owl-pagination
+        container()
+
+        position: absolute
+        bottom: 60px
+        left: 50%
+        display: flex
+        justify-content: flex-end
+        transform: translateX(-50%)
+
+        .owl-page
+            span
+                width: 10px
+                height: 10px
+                background: #292830
+                opacity: 1
+
+            &.active span
+                background: #a5a4a2
