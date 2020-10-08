@@ -1,0 +1,113 @@
+.prod
+    &__img
+        shadowBorder()
+
+        background: #fef9f1
+
+        @media media-min-lg
+            flex: 0 1 50%
+            padding-top: 20px
+            box-shadow: -400px 0 0 @background
+
+    &__shop
+        flex: 1
+        min-width: 0
+
+        @media media-max-lg
+            margin-top: 20px
+
+        @media media-min-lg
+            flex: 1
+            min-width: 0
+
+        .qty-wrapper
+            width: 130px
+
+            &:before
+                display: block
+                padding-bottom: 20px
+                color: var(--primary)
+                content: 'Quantidade'
+                font-weight: semibold
+                font-size: 14px
+
+        .breadcrumb
+            margin-bottom: 50px
+
+        .col
+            flex: 1
+            min-width: 0
+
+        .add-to-cart-btn
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: 0
+            height: 50px
+            border-radius: 50px
+            background: var(--button)
+            text-transform: uppercase
+            letter-spacing: 2px
+            font-weight: medium
+            font-size: 14px
+
+            &:hover
+                background: var(--button-hover)
+
+    &__name
+        h1
+            text-transform: uppercase
+            font-weight: bold
+            font-size: 20px
+
+    &__prices
+        display: flex
+        align-items: flex-end
+        padding: 25px 0
+
+        .price-box
+            margin-right: 10px
+            margin-bottom: 0
+
+            .regular-price, .special-price
+                .price
+                    span
+                        color: var(--secundary)
+                        font-weight: bold
+                        font-size: 22px
+
+        .price-box-parcelado
+            margin-bottom: 0
+
+.product-image-container
+    display: flex
+
+.product-image
+    flex: 1
+    padding-right: 20px
+    min-width: 0
+
+.more-views
+    @media media-min-lg
+        order: -1
+        margin-right: 20px
+
+.product-image-gallery
+    background: none
+    box-shadow: none
+
+.product-image-thumbs
+    @media media-min-lg
+        display: block
+
+    .thumb-link
+        box-shadow: none !important
+
+#product_addtocart_form
+    @media media-max-lg
+        display: block
+
+.catalog-product-view
+    .wrapper-container
+        overflow: hidden
+        width: 100%

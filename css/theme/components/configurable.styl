@@ -1,0 +1,24 @@
+.configurable
+    padding: 20px 0
+    border-top: solid 1px var(--border-color)
+    border-bottom: @border-top
+
+    &:before
+        display: none
+
+    &__caption
+        color: var(--primary)
+        font-weight: medium
+        font-size: 14px
+
+    &--swatch
+        img
+            border-radius: 50%
+
+    &-swatch-list
+        a
+            box-shadow: none
+
+            &:hover
+                background: none
+                box-shadow: none

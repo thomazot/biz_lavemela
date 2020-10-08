@@ -1252,6 +1252,18 @@ $j.fn.neonTheme.custom = {
             mode: 'prepend',
             ratio: false,
         },
+        'z-heart': {
+            selector: '.add-to-links .link-wishlist a',
+            mode: 'prepend',
+        },
+        'z-plus': {
+            selector: '.qty-wrapper .plus',
+            mode: 'html',
+        },
+        'z-less': {
+            selector: '.qty-wrapper .less',
+            mode: 'html',
+        },
     },
 }
 
@@ -1370,6 +1382,11 @@ $j(document)
             if (breadcrumb) {
                 breadcrumb.after(bannerCategory)
             }
+        }
+
+        var prodShop = $('.prod__shop > .col')
+        if (prodShop.length) {
+            prodShop.prepend(breadcrumb)
         }
     })
     .on('resizeStop', function (e) {

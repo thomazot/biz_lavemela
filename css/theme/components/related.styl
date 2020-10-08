@@ -1,0 +1,23 @@
+.related
+    position: relative
+
+    @media media-min-lg
+        &:before
+            position: absolute
+            top: 0
+            left: 50%
+            width: 100vw
+            height: 1px
+            background: var(--border-color)
+            content: ''
+            transform: translateX(-50%)
+
+    &__title
+        border: 0
+        font-size: 14px
+
+        @media media-min-lg
+            padding-top: 50px
+            text-align: center
+            text-transform: uppercase
+            font-size: 24px

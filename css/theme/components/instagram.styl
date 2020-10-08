@@ -15,8 +15,14 @@
 
     &__list
         display: grid
+        overflow: hidden
+        width: 100%
         grid-template-areas: 'item1 item2 item4 item5' 'item1 item3 item4 item6'
         grid-template-columns: 2fr 1fr 2fr 1fr
+
+        @media media-max-sm
+            grid-template-areas: 'item1 item2' 'item1 item3' 'item4 item5' 'item4 item6'
+            grid-template-columns: 2fr 1fr
 
         .label
             position: absolute
@@ -38,6 +44,7 @@
         .text
             display: block
             margin-top: 20px
+            text-align: center
 
         .ico
             width: 18px
