@@ -1,0 +1,39 @@
+.qty-wrapper
+    input
+        flex: 1
+        min-width: 0
+        height: 100%
+        border: 0 !important
+
+    .input-box
+        display: flex
+        align-items: stretch
+        overflow: hidden
+        height: 40px
+        border: solid 1px #e5e5e5
+        border-radius: 40px
+
+    .bt-box
+        position: static
+        display: contents
+
+    .plus, .less
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 0 16px
+        width: 45px
+        height: 40px
+        color: var(--primary)
+        opacity: 1
+
+        &:before
+            display: none
+
+        .ico
+            width: 14px
+            height: 14px
+            fill: currentColor
+
+    .less
+        order: -1
