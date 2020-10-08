@@ -1388,6 +1388,20 @@ $j(document)
         if (prodShop.length) {
             prodShop.prepend(breadcrumb)
         }
+
+        var produtcsTabs = $('.products-tabs')
+
+        produtcsTabs.each(function () {
+            var elTab = this
+            var products = $('.products', elTab)
+
+            products.first().addClass('on')
+
+            $('.products__title', elTab).click(function () {
+                $('.products', elTab).removeClass('on')
+                $(this).closest('.products').addClass('on')
+            })
+        })
     })
     .on('resizeStop', function (e) {
         // Safe window.resize
