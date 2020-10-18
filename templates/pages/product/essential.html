@@ -27,5 +27,15 @@
             @alertas
         </div>
         @endif(is_disponivel) 
+        
+        @compartilhar
     </div>
 </div>
+
+
+@if(tabela_medidas)
+<div class="table-ruler" id="table-ruler">
+    {{widget type="cms/widget_block" template="cms/widget/static_block/default.phtml" block_id="28"}}
+</div>
+<script>modal('table-ruler');</script>
+@endif(tabela_medidas)

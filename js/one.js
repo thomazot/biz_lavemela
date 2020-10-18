@@ -1402,6 +1402,19 @@ $j(document)
                 $(this).closest('.products').addClass('on')
             })
         })
+
+        var productRuler = $('#table-ruler')
+
+        if (productRuler.length) {
+            var buttonRuler = $(
+                '<button type="button" class="open-product-ruler"><svg class="ico z-ruler"><use xlink:href="#z-ruler" /></svg><span>Tabela de Medidas</span></button>'
+            )
+            $('.prod__shop .qty-wrapper').after(buttonRuler)
+
+            buttonRuler.click(function () {
+                modal_open('table-ruler')
+            })
+        }
     })
     .on('resizeStop', function (e) {
         // Safe window.resize
