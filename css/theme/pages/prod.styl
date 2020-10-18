@@ -7,7 +7,19 @@
         @media media-min-lg
             flex: 0 1 50%
             padding-top: 20px
+            padding-bottom: 20px
             box-shadow: -400px 0 0 @background
+
+            .product-image-container, .product-image-gallery
+                margin-bottom: 0
+                height: 100%
+
+            .product-image-gallery
+                display: flex
+                align-items: stretch
+
+                img
+                    object-fit: cover
 
     &__shop
         flex: 1
@@ -19,6 +31,36 @@
         @media media-min-lg
             flex: 1
             min-width: 0
+
+        .add-to-cart-buttons
+            display: flex
+            flex-flow: row wrap
+
+            .open-product-ruler
+                display: flex
+                flex: 1
+                justify-content: center
+                align-self: flex-end
+                align-items: center
+                margin-left: 16px
+                padding: 0 15px
+                min-width: 0
+                height: 40px
+                border: dashed 1px var(--primary)
+                border-radius: 40px
+                background: none
+                box-shadow: none
+                color: var(--primary)
+                font-weight: medium
+                font-size: 16px
+
+                @media media-max-lg
+                    font-size: 12px
+
+                .ico
+                    margin-right: 5px
+                    width: 30px
+                    height: 30px
 
         .qty-wrapper
             width: 130px
@@ -50,6 +92,10 @@
             letter-spacing: 2px
             font-weight: medium
             font-size: 14px
+            line-height: 50px
+
+            span
+                display: inline
 
             &:hover
                 background: var(--button-hover)
@@ -80,17 +126,20 @@
             margin-bottom: 0
 
 .product-image-container
-    display: flex
+    @media media-min-lg
+        display: flex
 
 .product-image
-    flex: 1
-    padding-right: 20px
-    min-width: 0
+    @media media-min-lg
+        flex: 1
+        padding-right: 20px
+        min-width: 0
 
 .more-views
     @media media-min-lg
         order: -1
         margin-right: 20px
+        width: 63px
 
 .product-image-gallery
     background: none
