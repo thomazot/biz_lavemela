@@ -3,6 +3,15 @@
     border-top: solid 1px var(--border-color)
     border-bottom: @border-top
 
+    @media media-min-lg
+        display: flex
+        flex-wrap: nowrap
+        align-items: flex-start
+
+        &__option
+            flex: 1
+            min-width: 0
+
     &:before
         display: none
 
@@ -10,6 +19,9 @@
         color: var(--primary)
         font-weight: medium
         font-size: 14px
+
+        span
+            font-weight: @font-weight
 
     &--swatch
         img
@@ -22,3 +34,12 @@
             &:hover
                 background: none
                 box-shadow: none
+                color: var(--primary)
+
+        .selected
+            .has-image
+                border-radius: 50%
+
+                .swatch-label
+                    border-radius: 50%
+                    box-shadow: 0 0 0 2px #fff

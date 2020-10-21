@@ -38,3 +38,28 @@
 
             &:hover
                 box-shadow: none
+
+            .count
+                display: none
+
+            @media media-min-lg
+                .li--0
+                    margin-bottom: 0 !important
+
+                .a--0
+                    margin-right: -16px
+                    margin-left: -16px
+                    padding: 8px 16px
+                    width: auto
+
+                    &:hover
+                        background: var(--primary)
+                        color: var(--primary-contrast)
+
+                .filters__swatches
+                    .li--0
+                        flex: 1 0 auto
+                        min-width: 0
+
+                    .a--0
+                        margin: 0
