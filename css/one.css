@@ -11817,6 +11817,17 @@ input[type=color] {
   border-top: solid 1px var(--border-color);
   border-bottom: solid 1px var(--border-color);
 }
+@media (min-width: 993px) {
+  .configurable {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .configurable__option {
+    flex: 1;
+    min-width: 0;
+  }
+}
 .configurable:before {
   display: none;
 }
@@ -11824,6 +11835,9 @@ input[type=color] {
   color: var(--primary);
   font-weight: 500;
   font-size: 0.88rem;
+}
+.configurable__caption span {
+  font-weight: 500;
 }
 .configurable--swatch img {
   border-radius: 50%;
